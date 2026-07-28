@@ -1,0 +1,5 @@
+(ns kotoba.capability.component.http
+  "Importable contract for component/http.")
+
+(def manifest
+  {:schema "kotoba.capability.repository.v1", :capability/version 1, :capability/dependencies #{}, :capability/imports #{:http-open :http-close :http-write :http-read :http-get}, :authority "kotoba-lang/kotoba-core-contracts", :capability/default-policy :approval-required, :capability/artifact {:format :wasm-component, :digest-required? true, :signature-required? true}, :capability/radicle-rid nil, :capability/repository "kotoba-lang/capability-component-http", :capability/id "component/http", :capability/effects #{:data-egress :network-read :network-write}, :capability/provider-status :contract-only})
